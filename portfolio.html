@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bootstrap Michael Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <style>
+        .jumbotron {
+            background-image: url("assets/images/IMG_2713.JPG");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top: 8px solid #0a0a0a69;
+            border-bottom: 8px solid #0a0a0a69;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+
+        }
+
+        .container {
+            margin: 72px 30px 20px 30px;
+
+        }
+
+        .col-sm {
+            margin-top: 50px;
+            margin-left: 140px;
+
+
+        }
+
+        img {
+            padding: 4px;
+            border: 2px solid black;
+            width: 220px;
+            height: 220px;
+            animation-duration: 5s;
+            animation-name: fadeIn;
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                margin-top: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-top: 0%;
+                width: 100%;
+            }
+
+
+        }
+
+
+
+        .display-4 {
+            color: white;
+            text-align: -webkit-center;
+            padding-bottom: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 90px;
+        }
+
+        .lead {
+            color: white;
+            text-align: center;
+            padding-bottom: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+        }
+
+        hr {
+
+            height: 2px;
+            width: 70%;
+            background-color: #0a0a0a69;
+            ;
+        }
+
+        h4 {
+
+            position: absolute;
+            bottom: 20px;
+
+            padding: 20px 10px 20px 10px;
+            margin-bottom: -12px;
+            color: white;
+            text-align: center;
+            margin-left: 118px;
+
+        }
+
+        #hangman {
+            margin-left: 300px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        #trivia {
+            margin-left: 26px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        #rutgers {
+            margin-left: 46px;
+        }
+
+        #rock {
+            margin-left: 41px;
+        }
+
+        h4:hover {
+            cursor: crosshair;
+            color: dodgerblue;
+        }
+
+
+
+        footer {
+
+            clear: both;
+            background-color: #666666;
+            text-align: center;
+            padding: 10px;
+            color: #ffffff;
+            margin-bottom: -10px;
+            border-top: 8px solid #0a0a0a69;
+            margin-right: -10px;
+            margin-left: -10px;
+            margin-top: 200px;
+        }
+
+    </style>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Michael Olsen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Portfolio</h1>
+                <p class="lead">Click any project below to view</p>
+            </div>
+        </div>
+        <h1>Portfolio Projects</h1>
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="text-center">
+                        <h4 id="hangman">Hangman</h4>
+                        <img src="assets/images/Steven-Gerrard-Wallpaper-HD-2013-14.jpg" class="rounded" alt="...">
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <h4>RPG Game</h4>
+                        <img src="assets/images/the-killers.png" class="rounded" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <h4 id="trivia">Trivia Game</h4>
+                        <div class="text-center">
+
+                            <img src="assets/images/Sun Valley Photo.jpeg" class="rounded" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h4 id="rutgers">Rutgers Info Widget</h4>
+                    <div class="text-center">
+                        <img src="assets/images/IMG_3344.jpg" class="rounded" alt="...">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h4 id="rock">Rock Paper Scissors</h4>
+                    <div class="text-center">
+                        <img src="assets/images/Sun Valley Idaho.jpeg" class="rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <footer>
+            <button type="button" class="btn btn-outline-primary">Facebook</button>
+            <button type="button" class="btn btn-outline-warning">LinkedIn</button>
+            <button type="button" class="btn btn-outline-success">Instagram</button>
+            <button type="button" class="btn btn-outline-danger">GitHub </button>
+        </footer>
+    </body>
+
+</html>
